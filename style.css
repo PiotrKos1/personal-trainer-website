@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60px;
+    background-color: #8B8B8B;
+}
+
+
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FCFCFC;
+    padding: 25px;
+    transition: color 0.8s;
+}
+
+.nav-link {
+    display: none;
+}
+
+nav a:hover, .menu-btn:hover {
+    color: #000000;
+}
+
+.nav-logo {
+    font-family: 'Allura', cursive;
+    color: #FCFCFC;
+    /* font-size: 40px; */
+    font-size: 25px;
+    
+}
+
+.material-symbols-outlined {
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.menu-btn {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #FCFCFC;
+    transition: color 0.8s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/bg-img-small.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header div {
+    text-align: center;
+}
+
+header div p {
+    /* font-size: 75px; */
+    font-size: 35px;
+    color: #FCFCFC;
+    padding-bottom: 60px;
+}
+
+header div button {
+    /* width: 300px; */
+    /* height: 50px; */
+    /* font-size: 16px; */
+    width: 150px;
+    height: 40px;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    transition: color 0.8s;
+}
+
+header div button:hover {
+    color: #000000;
+}
+
+@media (min-width:576px) {
+    .material-symbols-outlined {
+        font-size: 18px;
+    }
+    .nav-logo {
+        font-size: 32px;
+    }
+    .menu-btn {
+        font-size: 28px;
+    }
+    header div p {
+        font-size: 45px;
+    }
+    header div button {
+        width: 200px;
+        height: 45px;
+    }
+}
+
+@media (min-width:992px) {
+    header {
+        background-image: url(images/bg-img-large.jpg);
+    }
+    .material-symbols-outlined {
+        font-size: 20px;
+    }
+    .nav-logo {
+        font-size: 36px;
+    }
+    .nav-link {
+        display: block;
+    }
+    .menu-btn {
+        display: none;
+    }
+    header div p {
+        font-size: 48px;
+    }
+    header div button {
+        width: 250px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1200px) {
+    .material-symbols-outlined {
+        font-size: 22px;
+    }
+    .nav-logo {
+        font-size: 40px;
+    }
+    header div p {
+        font-size: 60px;
+    }
+    header div button {
+        width: 300px;
+        height: 50px;
+    }
+}
+
