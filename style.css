@@ -125,19 +125,58 @@ header div button a:hover {
 }
 
 .about-me {
-    display: flex;
-    background-color:var(--secondary-color);
+    background-image: url('images/about-me-img-large.jpg');
+    background-size: cover;
+    height: 100vh;
 }
 
-.about-me img {
+.about-me-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.text {
+    /* width: 800px; */
+    width: 250px;
+    color:var(--main-color)
+}
+
+.text h1 {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.text p {
+    /* font-size: 18px; */
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+
+
+/* .about-me img {
     padding-top: 20px;
     width: 300px;
     margin-left: 300px;
 }
 
 .about-me div {
+    width: 500px;
+}
+
+.about-me div {
     margin: 20px 0 0 20px;
     width: 600px;
+} */
+
+@media (min-width:400px) {
+    .text {
+        width: 350px;
+    }
 }
 
 @media (min-width:576px) {
@@ -156,6 +195,18 @@ header div button a:hover {
     header div button {
         width: 200px;
         height: 45px;
+    }
+    .text {
+        width: 500px;
+    }
+}
+
+@media (min-width:776px) {
+    .text {
+        width: 650px;
+    }
+    .text p {
+        font-size: 18px;
     }
 }
 
@@ -184,6 +235,9 @@ header div button a:hover {
         width: 250px;
         height: 45px;
         font-size: 16px;
+    }
+    .text {
+        width: 800px;
     }
 }
 
