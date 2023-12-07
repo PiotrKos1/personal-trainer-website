@@ -15,7 +15,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--third-color); */
     position: fixed;
     width: 100%;
     /* na wszelki wypadek
@@ -125,7 +125,7 @@ header div button a:hover {
 }
 
 .about-me {
-    background-image: url('images/about-me-img-large.jpg');
+    background-image: url('images/about-me-img-small.jpg');
     background-size: cover;
     height: 100vh;
 }
@@ -140,7 +140,6 @@ header div button a:hover {
 }
 
 .text {
-    /* width: 800px; */
     width: 250px;
     color:var(--main-color)
 }
@@ -151,27 +150,170 @@ header div button a:hover {
 }
 
 .text p {
-    /* font-size: 18px; */
     font-size: 16px;
     color: var(--secondary-color);
+    text-align: justify;
 }
 
+.offer {
+    height: 1000px;
+    /* padding-top: 20px; */
+    background-color: var(--third-color);
+    display: flex;
+    flex-direction: column;
+}
 
+.offer-wrapper {
+    display: flex;
+    /* justify-content: space-around; */
+    /* wywalić flex direction przy wiekszej roz  */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 30px 0 30px; */
+    padding-top: 25px;
+}
 
-/* .about-me img {
-    padding-top: 20px;
+.offer-box {
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 6px var(--main-color);
+    border-radius: 20px;
+    width: 220px;
+    height:190px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: transform 0.4s;
+    
+}
+
+/* .offer-box {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 6px var(--main-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
     width: 300px;
-    margin-left: 300px;
-}
-
-.about-me div {
-    width: 500px;
-}
-
-.about-me div {
-    margin: 20px 0 0 20px;
-    width: 600px;
+    height: 280px;
+    cursor: pointer;
+    transition: transform 0.4s;
 } */
+
+.offer-box:hover {
+    transform: scale(1.05);
+}
+
+.train {
+    background-image: url('images/train-img.jpg');
+}
+
+.diet {
+    background-image: url('images/diet-img.jpg');
+}
+
+.complex {
+    background-image: url('images/train2-img.jpg');
+  
+}
+
+.offer-shadow {
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 60px;
+}
+
+/* .offer-shadow {
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100px;
+} */
+
+.offer-text {
+    margin-top: 5px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* .offer-text {
+    margin-top: 30px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+} */
+
+.offer-detail {
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* .offer-detail {
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+} */
+
+/* .invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.invite-title {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.invite-offer {
+    list-style-type: none;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-size: 22px ;
+}
+
+.invite-offer li {
+    padding-bottom: 6px;
+} */
+
+.invite {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.invite-title {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.invite-offer {
+    list-style-type: none;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-size: 16px ;
+}
+
+.invite-offer li {
+    padding-bottom: 3px;
+}
 
 @media (min-width:400px) {
     .text {
@@ -206,7 +348,30 @@ header div button a:hover {
         width: 650px;
     }
     .text p {
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .offer {
+        height: 450px;
+        padding-top: 16px;
+    }
+    .offer-wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .offer-text {
+        font-size: 16px;
+    }
+    .offer-detail {
+        font-size: 14px;
+    }
+    .invite-title {
+        font-size: 26px;
+    }
+    .invite-offer {
+        font-size: 16px;
+    }
+    .invite-offer li {
+        padding-bottom: 4px;
     }
 }
 
@@ -236,6 +401,9 @@ header div button a:hover {
         height: 45px;
         font-size: 16px;
     }
+    .about-me {
+        background-image: url('/images/about-me-img-large.jpg');
+    }
     .text {
         width: 800px;
     }
@@ -255,5 +423,35 @@ header div button a:hover {
         width: 300px;
         height: 50px;
     }
+    .offer {
+        height: 600px;
+        padding-top: 20px;
+    }
+    .offer-wrapper {
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    .offer-box {
+        width: 260px;
+        height: 220px;
+    }
+    .offer-shadow {
+        height: 100px;
+    }
+    .offer-text {
+        font-size: 22px;
+    }
+    .offer-detail {
+        font-size: 16px;
+    }
+    .invite-title {
+        font-size: 30px;
+    }
+    .invite-offer {
+        font-size: 20px;
+    }
+    .invite-offer li {
+        padding-bottom: 6px;
+    } 
 }
 
