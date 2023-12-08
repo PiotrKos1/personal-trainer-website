@@ -15,11 +15,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    /* background-color: var(--third-color); */
     position: fixed;
     width: 100%;
-    /* na wszelki wypadek
-    /* position: relative; */
 }
 
 nav ul {
@@ -157,8 +154,6 @@ header div button a:hover {
 
 .offer {
     height: 920px;
-    /* height: 100vh; */
-    /* padding-top: 20px; */
     background-color: var(--third-color);
     display: flex;
     flex-direction: column;
@@ -166,12 +161,9 @@ header div button a:hover {
 
 .offer-wrapper {
     display: flex;
-    /* justify-content: space-around; */
-    /* wywalić flex direction przy wiekszej roz  */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 60px 30px 0 30px; */
     padding-top: 25px;
 }
 
@@ -190,18 +182,6 @@ header div button a:hover {
     
 }
 
-/* .offer-box {
-    background-position: center;
-    background-size: cover;
-    box-shadow: 1px 1px 6px var(--main-color);
-    border-radius: 20px;
-    display: flex;
-    align-items: flex-end;
-    width: 300px;
-    height: 280px;
-    cursor: pointer;
-    transition: transform 0.4s;
-} */
 
 .offer-box:hover {
     transform: scale(1.05);
@@ -226,11 +206,6 @@ header div button a:hover {
     height: 60px;
 }
 
-/* .offer-shadow {
-    background-color: rgba(0, 0, 0, 0.6); 
-    width: 100%;
-    height: 100px;
-} */
 
 .offer-text {
     margin-top: 5px;
@@ -241,14 +216,6 @@ header div button a:hover {
     font-size: 14px;
 }
 
-/* .offer-text {
-    margin-top: 30px;
-    color: var(--secondary-color);
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 22px;
-} */
 
 .offer-detail {
     color: var(--secondary-color);
@@ -256,38 +223,6 @@ header div button a:hover {
     text-transform: uppercase;
     font-size: 12px;
 }
-
-/* .offer-detail {
-    color: var(--secondary-color);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-} */
-
-/* .invite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.invite-title {
-    margin-top: 60px;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--main-color);
-}
-
-.invite-offer {
-    list-style-type: none;
-    margin-top: 10px;
-    color: var(--secondary-color);
-    font-size: 22px ;
-}
-
-.invite-offer li {
-    padding-bottom: 6px;
-} */
 
 .invite {
     padding: 0 10px 0 10px;
@@ -394,6 +329,18 @@ header div button a:hover {
     color: var(--main-color);
 }
 
+footer {
+    height: 100px;
+    background-color: var(--third-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
 @media (min-width:400px) {
     .text {
         width: 350px;
@@ -435,6 +382,9 @@ header div button a:hover {
     .opinion-text {
         width: 350px;
     }
+    footer {
+        font-size: 16px;
+    }
 }
 
 @media (min-width:776px) {
@@ -445,9 +395,7 @@ header div button a:hover {
         font-size: 20px;
     }
     .offer {
-        /* height: 450px; */
         height: 600px;
-        /* padding-top: 16px; */
         padding-top: 120px;
     }
     .offer-wrapper {
@@ -516,6 +464,9 @@ header div button a:hover {
         width: 160px;
         padding: 10px;
     }
+    .contact {
+        height: 180px;
+    }
     .contact-logo {
         font-size: 30px;
     }
@@ -539,8 +490,6 @@ header div button a:hover {
         height: 50px;
     }
     .offer {
-        /* height: 600px; */
-        /* height: 100vh; */
         height: 600px;
         padding-top: 100px;
     }
