@@ -156,7 +156,8 @@ header div button a:hover {
 }
 
 .offer {
-    height: 1000px;
+    height: 920px;
+    /* height: 100vh; */
     /* padding-top: 20px; */
     background-color: var(--third-color);
     display: flex;
@@ -315,9 +316,99 @@ header div button a:hover {
     padding-bottom: 3px;
 }
 
+.contact {
+    background-color: var(--third-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+}
+
+.contact-logo {
+    padding-top: 8px;
+    font-family: 'Allura', cursive;
+    color: var(--main-color);
+    font-size: 25px;
+    
+}
+
+.invite-contact {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.contact-links {
+    padding-top: 8px;
+}
+
+
+.contact a {
+    color: var(--main-color);
+    padding: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.contact a:hover {
+    color: var(--secondary-color);
+}
+
+.opinion {
+    background-color: var(--third-color);
+}
+
+.opinon-title {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px 0 12px;
+}
+
+.opinion-text {
+    width: 240px;
+    color: var(--main-color);
+    padding-bottom: 20px;
+    text-align: justify;
+    color: var(--secondary-color);
+    font-size: 16px ;
+}
+
+.name {
+    font-family: 'Allura', cursive;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
 @media (min-width:400px) {
     .text {
         width: 350px;
+    }
+    .offer {
+        height: 850px;
+    }
+    .invite-contact {
+        margin-top: 15px;
+    }
+    .contact {
+        height: 140px;
+    }
+    .opinion-text {
+        width: 340px;
     }
 }
 
@@ -341,6 +432,9 @@ header div button a:hover {
     .text {
         width: 500px;
     }
+    .opinion-text {
+        width: 350px;
+    }
 }
 
 @media (min-width:776px) {
@@ -351,8 +445,10 @@ header div button a:hover {
         font-size: 20px;
     }
     .offer {
-        height: 450px;
-        padding-top: 16px;
+        /* height: 450px; */
+        height: 600px;
+        /* padding-top: 16px; */
+        padding-top: 120px;
     }
     .offer-wrapper {
         flex-direction: row;
@@ -364,7 +460,7 @@ header div button a:hover {
     .offer-detail {
         font-size: 14px;
     }
-    .invite-title {
+    .invite-title, .invite-contact, .opinon-title {
         font-size: 26px;
     }
     .invite-offer {
@@ -373,6 +469,11 @@ header div button a:hover {
     .invite-offer li {
         padding-bottom: 4px;
     }
+ 
+    .opinion-text {
+        width: 400px;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -407,6 +508,20 @@ header div button a:hover {
     .text {
         width: 800px;
     }
+    .opinions {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .opinion-text {
+        width: 160px;
+        padding: 10px;
+    }
+    .contact-logo {
+        font-size: 30px;
+    }
+    .contact a {
+        font-size: 24px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -424,8 +539,10 @@ header div button a:hover {
         height: 50px;
     }
     .offer {
+        /* height: 600px; */
+        /* height: 100vh; */
         height: 600px;
-        padding-top: 20px;
+        padding-top: 100px;
     }
     .offer-wrapper {
         justify-content: space-around;
@@ -444,14 +561,18 @@ header div button a:hover {
     .offer-detail {
         font-size: 16px;
     }
-    .invite-title {
+    .invite-title, .invite-contact {
         font-size: 30px;
     }
-    .invite-offer {
+    .invite-offer, .contact a {
         font-size: 20px;
     }
     .invite-offer li {
         padding-bottom: 6px;
     } 
+    .opinion-text {
+        width: 200px;
+        padding: 15px;
+    }
 }
 
