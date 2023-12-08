@@ -3,6 +3,7 @@ const closeMenuBtn = document.querySelector('.close-menu-btn')
 const links = document.querySelector('.links')
 const media = window.matchMedia('(min-width: 992px)')
 
+// właściwość matchMedia - wywołanie zdarzenia na zmianę rozdzielczości
 
 const checkMedia = (media) => {
     if (media.matches) {
@@ -20,12 +21,17 @@ const showMenu = () => {
     closeMenuBtn.style="display: block"
 }
 
-const closeMenu = () => {
+// delegacja zdarzeń, target na jeden przycisk
+
+const closeMenu = (event) => {
+    if (event.target.classList.value !== "bi bi-list") {
     links.classList.remove('active')
     closeMenuBtn.style="display: none"
     menuBtn.style="display: block"
+    }
 }
 
+
 menuBtn.addEventListener('click', showMenu)
-closeMenuBtn.addEventListener('click', closeMenu)
 media.addEventListener('change', ()=>{checkMedia(media)})
+window.addEventListener('click', closeMenu)
