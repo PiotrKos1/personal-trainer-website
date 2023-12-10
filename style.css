@@ -86,7 +86,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/bg-img-small.jpg');
+    background-image: url('images/bg-img-small.jpg');
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -451,7 +451,7 @@ footer {
         font-size: 16px;
     }
     .about-me {
-        background-image: url('/images/about-me-img-large.jpg');
+        background-image: url('images/about-me-img-large.jpg');
     }
     .text {
         width: 800px;
