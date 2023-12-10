@@ -426,7 +426,7 @@ footer {
 
 @media (min-width:992px) {
     header {
-        background-image: url(images/bg-img-large.jpg);
+        background-image: url("images/bg-img-large.jpg");
     }
     .material-symbols-outlined {
         font-size: 20px;
